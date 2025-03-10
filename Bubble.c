@@ -2,11 +2,17 @@
 
 void bubble_sort(int arr[], int n) {
 int i, j , temp;
-for(int i= n-1; i>0; i--) {
+for ( i= n-1; i>0; i--) {
+for (j=0; j<i; j++) {
+if (arr[j] > arr[j+1]){
+temp = arr[j];
+arr[j] = arr[j+1];
+arr[j+1] = temp; 
 
-    
+
 }
-
+}
+}
 } 
 
 
@@ -16,15 +22,12 @@ for(int i= n-1; i>0; i--) {
 
 
 
+int main(void) {
 
 
 
 
 
 
-
-
-
-
-
-
+return 0;
+}
